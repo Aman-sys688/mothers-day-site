@@ -1,0 +1,83 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#ffb6c1,#ffe4e1);
+  overflow:hidden;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  width:350px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  z-index:2;
+}
+
+h1{
+  color:#ff4d6d;
+}
+
+p{
+  color:#444;
+  font-size:18px;
+}
+
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+  margin-top:15px;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+}
+
+.mom-photo{
+  width:200px;
+  border-radius:15px;
+  margin:15px 0;
+}
+
+#secret-message{
+  margin-top:20px;
+  font-size:20px;
+  color:#ff006e;
+  font-weight:bold;
+}
+
+.hearts::before,
+.hearts::after{
+  content:"❤️ ❤️ ❤️ ❤️ ❤️";
+  position:absolute;
+  width:100%;
+  animation:float 8s linear infinite;
+  font-size:30px;
+  opacity:0.4;
+}
+
+.hearts::after{
+  top:50%;
+  animation-delay:4s;
+}
+
+@keyframes float{
+  from{
+    transform:translateY(100vh);
+  }
+  to{
+    transform:translateY(-100vh);
+  }
+}
